@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-5">
         <div className="text-center text-2xl font-bold tracking-tighter">
-          Bon Voyage!
+        <Link href="/">Ran's Diary</Link>
         </div>
         <div className="text-center mb-4">
           <p className="text-gray-400">© Ran</p>

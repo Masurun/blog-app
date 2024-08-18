@@ -1,9 +1,10 @@
 import Footer from "@/app/_components/footer";
-import { Intro } from "@/app/_components/intro";
+import { Header } from "@/app/_components/header";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
+
 
 import "./globals.css";
 
@@ -58,7 +59,7 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body>
-        <Intro />
+        <Header />
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>

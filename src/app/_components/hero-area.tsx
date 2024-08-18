@@ -11,9 +11,9 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    "../assets/hero.jpg",
     "../assets/hero2.jpg",
-    "../assets/hero3.png",
+    "../assets/hero3.jpg",
+    "../assets/hero.jpg",
   ];
 
   // スライドのインデックスを更新するためのエフェクト
@@ -38,9 +38,9 @@ export default function HeroArea() {
   };
 
   return (
-    <section className="mb-32 relative">
+    <section className="relative">
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container max-h-[720px]">
+        <div className="embla__container max-h-[320px]">
           {images.map((src, index) => (
             <div key={index} className="embla__slide">
               <img
