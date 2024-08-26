@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: { page: string } }) {
       <Container>
         <section>
           <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
-            Diary
+            Tech
           </h2>
 
           {/* 投稿の一覧表示 */}
