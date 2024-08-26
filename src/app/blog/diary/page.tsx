@@ -1,6 +1,7 @@
 import { getAllPosts } from "@/lib/api";
 import Container from "@/app/_components/container";
 import { Post } from "@/interfaces/post";
+import { PostPreview } from "@/app/_components/post-preview";
 
 export default async function Page() {
   const allPosts: Post[] = await getAllPosts();
@@ -8,17 +9,24 @@ export default async function Page() {
   return (
     <main className="py-16">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {allPosts.map((post) => (
-            <div key={post.slug} className="p-4 border rounded-lg shadow-md">
-              <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-              <p className="text-gray-600">{post.excerpt}</p>
-              <a href={`/blog-app/blog/posts/${post.slug}`} className="text-blue-500 hover:underline">
-                Read more
-              </a>
-            </div>
-          ))}
-        </div>
+        <section>
+          <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
+            All Posts
+          </h2>
+
+          {/* Assuming there's no loading state for static generation */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mb-16">
+            {allPosts.map((post) => (
+              <PostPreview
+                key={post.slug}
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                slug={post.slug}
+              />
+            ))}
+          </div>
+        </section>
       </Container>
     </main>
   );
