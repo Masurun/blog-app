@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import nextConfig from "../../next.config.js";
 const BASE_PATH = nextConfig.basePath || "";
 
 export default function About() {
