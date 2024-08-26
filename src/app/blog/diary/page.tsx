@@ -2,6 +2,8 @@ import { getAllPosts } from "@/lib/api";
 import Container from "@/app/_components/container";
 import { Post } from "@/interfaces/post";
 import { PostPreview } from "@/app/_components/post-preview";
+import Pagination from "@/app/_components/pagination"; // ページネーションコンポーネントをインポート
+
 
 export default async function Page() {
   const allPosts: Post[] = await getAllPosts();
