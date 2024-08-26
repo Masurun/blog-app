@@ -1,6 +1,5 @@
 import { getAllPosts } from "@/lib/api";
 import Container from "@/app/_components/container";
-import { AllStories } from "@/app/_components/all-stories";
 import { Post } from "@/interfaces/post";
 
 type PageProps = {
@@ -21,12 +20,6 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="py-16">
       <Container>
-        <AllStories
-          title="All Stories"
-          link="/all-stories"
-          initialPosts={selectedPosts}
-          totalPages={totalPages}
-        />
       </Container>
     </main>
   );
