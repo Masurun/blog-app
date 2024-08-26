@@ -1,4 +1,5 @@
 import Image from 'next/image'
+const BASE_PATH = nextConfig.basePath || "";
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
         <div className="flex flex-col items-center mb-8">
           <Image
             className="rounded-full"
-            src="/assets/profile.jpg"
+            src=`/${BASE_PATH}/assets/profile.jpg`
             alt="Profile Picture"
             width={120}
             height={120}
