@@ -20,7 +20,7 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="py-16">
       <Container>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {selectedPosts.map((post) => (
             <div key={post.slug} className="p-4 border rounded-lg shadow-md">
               <h2 className="text-xl font-bold mb-2">{post.title}</h2>
@@ -60,8 +60,9 @@ export async function generateStaticParams() {
   const allPosts = await getAllPosts();
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
 
-  // 1ページからtotalPagesまでのパスを生成
   return Array.from({ length: totalPages }, (_, index) => ({
     page: (index + 1).toString(),
+  })).map((params) => ({
+    page: params.page, // パスの一部としてページ番号を使用
   }));
 }
