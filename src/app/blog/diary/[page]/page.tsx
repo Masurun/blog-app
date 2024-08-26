@@ -6,7 +6,7 @@ import { PostPreview } from "@/app/_components/post-preview";
 import Pagination from "@/app/_components/pagination"; // ページネーションコンポーネントをインポート
 
 
-const POSTS_PER_PAGE = 10; // 1ページあたりの投稿数を設定
+const POSTS_PER_PAGE = 9; // 1ページあたりの投稿数を設定
 
 export async function generateStaticParams() {
   const allPosts: Post[] = await getAllPosts();
