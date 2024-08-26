@@ -11,7 +11,7 @@ export default async function Page() {
       <Container>
         <section>
           <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
-            All Posts
+            Tech
           </h2>
 
           {/* Assuming there's no loading state for static generation */}
