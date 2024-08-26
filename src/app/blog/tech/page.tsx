@@ -8,7 +8,6 @@ export default function Page() {
   return (
     <main className="py-16">
       <Container>
-        <AllStories  title="Tech" link="/blog/diary" />
       </Container>
     </main>
   );
