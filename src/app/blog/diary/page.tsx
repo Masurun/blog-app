@@ -20,6 +20,36 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="py-16">
       <Container>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {selectedPosts.map((post) => (
+            <div key={post.slug} className="p-4 border rounded-lg shadow-md">
+              <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+              <p className="text-gray-600">{post.excerpt}</p>
+              <a href={`/posts/${post.slug}`} className="text-blue-500 hover:underline">
+                Read more
+              </a>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex justify-center space-x-4 mt-8">
+          {currentPage > 1 && (
+            <a
+              href={`/diary/${currentPage - 1}`}
+              className="px-4 py-2 bg-gray-800 text-white rounded"
+            >
+              ← Previous
+            </a>
+          )}
+          {currentPage < totalPages && (
+            <a
+              href={`/diary/${currentPage + 1}`}
+              className="px-4 py-2 bg-gray-800 text-white rounded"
+            >
+              Next →
+            </a>
+          )}
+        </div>
       </Container>
     </main>
   );
