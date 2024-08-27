@@ -21,7 +21,7 @@ export function Footer() {
             className="hover:text-white"
           >
             <Image
-              src=`/assets/x.svg`
+              src="/assets/x.svg"
               alt="X"
               width={24}
               height={24}
@@ -35,7 +35,7 @@ export function Footer() {
             className="hover:text-white"
           >
             <Image
-              src=`/assets/github.svg`
+              src="/assets/github.svg"
               alt="GitHub"
               width={24}
               height={24}
