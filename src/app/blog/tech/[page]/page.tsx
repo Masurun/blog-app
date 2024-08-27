@@ -10,7 +10,8 @@ const POSTS_PER_PAGE = 9; // 1ページあたりの投稿数を設定
 export async function generateStaticParams() {
   const allPosts: Post[] = await getAllPosts();
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
-
+  const category = "tech";
+  
   const paths = [];
   for (let i = 1; i <= totalPages; i++) {
     paths.push({ page: i.toString() });
@@ -47,7 +48,7 @@ export default async function Page({ params }: { params: { page: string } }) {
           </div>
 
           {/* ページネーションを追加 */}
-          <Pagination currentPage={page} totalPages={Math.ceil(allPosts.length / POSTS_PER_PAGE)} />
+          <Pagination currentPage={page} totalPages={Math.ceil(allPosts.length / POSTS_PER_PAGE)} category{category} />
         </section>
       </Container>
     </main>
