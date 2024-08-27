@@ -18,8 +18,8 @@ export function Header() {
           <Link href="/">Ran's Diary</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/blog/diary">Diary</Link>
-          <Link href="/blog/tech">Tech</Link>
+          <Link href="/blog/diary/1">Diary</Link>
+          <Link href="/blog/tech/1">Tech</Link>
           <Link href="/about">About</Link>
         </nav>
         <button className="md:hidden flex items-center" onClick={toggleMenu}>
@@ -74,8 +74,8 @@ export function Header() {
               </svg>
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
-              <Link href="/blog/diary">Diary</Link>
-              <Link href="/blog/tech">Tech</Link>
+              <Link href="/blog/diary/1">Diary</Link>
+              <Link href="/blog/tech/1">Tech</Link>
               <Link href="/about">About</Link>
             </div>
           </div>
