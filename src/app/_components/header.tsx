@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import nextConfig from "../../../next.config.js";
-const BASE_PATH = nextConfig.basePath || "";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +19,7 @@ export function Header() {
           <Link href="/blog/diary/1">Diary</Link>
           <Link href="/blog/tech/1">Tech</Link>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
         <button className="md:hidden flex items-center" onClick={toggleMenu}>
           <svg
@@ -77,6 +76,7 @@ export function Header() {
               <Link href="/blog/diary/1">Diary</Link>
               <Link href="/blog/tech/1">Tech</Link>
               <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
             </div>
           </div>
         )}
