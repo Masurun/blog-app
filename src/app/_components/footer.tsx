@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from "next/link";
+import nextConfig from "../../../next.config.js";
+const BASE_PATH = nextConfig.basePath || "";
 
 export function Footer() {
   return (
@@ -19,7 +21,7 @@ export function Footer() {
             className="hover:text-white"
           >
             <Image
-              src="/assets/x.svg"
+              src=`{${BASE_PATH}/assets/x.svg}`
               alt="X"
               width={24}
               height={24}
@@ -33,7 +35,7 @@ export function Footer() {
             className="hover:text-white"
           >
             <Image
-              src="/assets/github.svg"
+              src=`{${BASE_PATH}/assets/github.svg}`
               alt="GitHub"
               width={24}
               height={24}
