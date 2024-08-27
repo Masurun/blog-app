@@ -18,7 +18,7 @@ export function Header() {
           <Link href="/">Ran's Diary</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
-          <Link href=`{${BASE_PATH}/blog/diary}`>Diary</Link>
+          <Link href="/blog/diary">Diary</Link>
           <Link href="/blog/tech">Tech</Link>
           <Link href="/about">About</Link>
         </nav>
@@ -74,7 +74,7 @@ export function Header() {
               </svg>
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
-              <Link href=`{${BASE_PATH}/blog/diary}`>Diary</Link>
+              <Link href="/blog/diary">Diary</Link>
               <Link href="/blog/tech">Tech</Link>
               <Link href="/about">About</Link>
             </div>
