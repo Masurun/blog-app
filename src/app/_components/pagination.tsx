@@ -11,7 +11,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
       <ul className="flex justify-center gap-2">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <li key={page}>
-            <Link href={`/blog-app/blog/diary/${page}`}>
+            <Link href={`/blog/diary/${page}`}>
               <a className={`px-3 py-1 border ${page === currentPage ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'}`}>
                 {page}
               </a>
