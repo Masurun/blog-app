@@ -25,7 +25,8 @@ export default async function Page({ params }: { params: { page: string } }) {
   const allPosts: Post[] = await getAllPosts();
   const startIndex = (page - 1) * POSTS_PER_PAGE;
   const selectedPosts = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
-
+  const category = "diary";
+  
   return (
     <main className="py-16">
       <Container>
@@ -48,7 +49,7 @@ export default async function Page({ params }: { params: { page: string } }) {
           </div>
 
           {/* ページネーションを追加 */}
-          <Pagination currentPage={page} totalPages={Math.ceil(allPosts.length / POSTS_PER_PAGE)} />
+          <Pagination currentPage={page} totalPages={Math.ceil(allPosts.length / POSTS_PER_PAGE)} category{category} />
         </section>
       </Container>
     </main>
