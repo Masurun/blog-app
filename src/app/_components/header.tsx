@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import nextConfig from "../../../next.config.js";
+const BASE_PATH = nextConfig.basePath || "";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,7 @@ export function Header() {
           <Link href="/">Ran's Diary</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/blog/diary">Diary</Link>
+          <Link href=`{${BASE_PATH}/blog/diary}`>Diary</Link>
           <Link href="/blog/tech">Tech</Link>
           <Link href="/about">About</Link>
         </nav>
@@ -72,8 +74,8 @@ export function Header() {
               </svg>
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
-              <Link href="/blog//diary">Diary</Link>
-              <Link href="/blog//tech">Tech</Link>
+              <Link href=`{${BASE_PATH}/blog/diary}`>Diary</Link>
+              <Link href="/blog/tech">Tech</Link>
               <Link href="/about">About</Link>
             </div>
           </div>
