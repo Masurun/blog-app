@@ -13,7 +13,7 @@ export default function Index() {
           <MoreStories
             posts={allPosts}
             title="Diary"
-            link="/blog/diary/"
+            link="/blog/diary/1"
           />
         )}
         </Container>
@@ -22,7 +22,7 @@ export default function Index() {
           <MoreStories
             posts={allPosts}
             title="Tech"
-            link="/blog/tech/"
+            link="/blog/tech/1"
           />
         )}
         </Container>
