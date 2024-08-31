@@ -11,16 +11,16 @@ export function Header() {
 
   return (
     <header className="shadow">
-      <div className="flex items-center justify-between p-4 bg-white container mx-auto px-5">
+      <div className="flex items-center justify-between p-8 bg-white container mx-auto px-5">
         <h1 className="text-2xl font-bold tracking-tighter">
           <Link href="/">Ran's Blog</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/blog/works/1">Works</Link>
-          <Link href="/blog/life/1">Life</Link>
-          <Link href="/blog/tech/1">Tech</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/blog/works/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Works</Link>
+          <Link href="/blog/life/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Life</Link>
+          <Link href="/blog/tech/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tech</Link>
+          <Link href="/about" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">About</Link>
+          <Link href="/contact" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</Link>
         </nav>
         <button className="md:hidden flex items-center" onClick={toggleMenu}>
           <svg
@@ -74,11 +74,11 @@ export function Header() {
               </svg>
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
-              <Link href="/blog/works/1">Works</Link>
-              <Link href="/blog/life/1">Life</Link>
-              <Link href="/blog/tech/1">Tech</Link>
-              <Link href="/about">About</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/blog/works/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Works</Link>
+              <Link href="/blog/life/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Life</Link>
+              <Link href="/blog/tech/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tech</Link>
+              <Link href="/about" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">About</Link>
+              <Link href="/contact" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</Link>
             </div>
           </div>
         )}
