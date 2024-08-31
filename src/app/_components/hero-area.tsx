@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
+import nextConfig from "../../next.config.mjs";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 export default function HeroArea() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -11,7 +14,7 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    `/assets/hero2.jpg`,
+    `{${BASE_PATH}/assets/hero2.jpg}`,
     `/assets/hero3.jpg`,
     `/assets/hero.jpg`,
   ];
