@@ -13,7 +13,7 @@ export function Header() {
     <header className="shadow">
       <div className="flex items-center justify-between p-8 bg-white container mx-auto px-5">
         <h1 className="text-2xl font-bold tracking-tighter">
-          <Link href="/">Ran's Blog</Link>
+          <Link href="/" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Ran's Blog</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
           <Link href="/blog/works/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Works</Link>
