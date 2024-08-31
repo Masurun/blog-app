@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-5">
         <div className="text-center text-2xl font-bold tracking-tighter">
-        <Link href="/">Ran's Diary</Link>
+        <Link href="/">Ran's Blog</Link>
         </div>
         <div className="text-center mb-4">
           <p className="text-gray-400">© Ran</p>
