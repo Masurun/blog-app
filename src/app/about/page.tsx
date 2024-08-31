@@ -1,59 +1,121 @@
-import Image from 'next/image'
-import nextConfig from "../../../next.config.js";
-const BASE_PATH = nextConfig.basePath || "";
+import Container from "@/app/_components/container";
 
 export default function About() {
   return (
-    <div className="min-h-screen p-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col items-center mb-8">
-          <Image
-            className="rounded-full"
-            src={`${BASE_PATH}/assets/profile.jpg`}
-            alt="Profile Picture"
-            width={120}
-            height={120}
-          />
-          <h2 className="text-4xl font-bold mt-4">自己紹介</h2>
-        </div>
-        <div className="space-y-8">
-          {/* 1つ目のカード */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-2">プロフィール</h3>
-            <p className="text-gray-600">名前: らん</p>
-            <p className="text-gray-600">生年月日: XXXX年XX月XX日</p>
-            <p className="text-gray-600">最終学歴: hogehoge大学卒業（XXXX年）</p>
+    <main>
+      <Container bgColor="bg-gray-100">
+        <section className="flex flex-col-reverse lg:flex-row items-center lg:items-start py-8">
+          <div className="lg:w-1/2">
+            <h2 className="mb-4 text-4xl font-bold lg:text-5xl">Profile</h2>
+            <p className="mb-4 text-lg leading-relaxed">
+              Hi, I'm [Your Name], a [Your Profession] based in [Your Location].
+              I have a passion for [Your Interests or Hobbies]. With [X years]
+              of experience in [Your Field or Expertise], I specialize in [Your
+              Specialization].
+            </p>
+            <p className="text-lg leading-relaxed">
+              In my free time, I enjoy [Your Hobbies or Activities], and I'm
+              always eager to learn and explore new things.
+            </p>
           </div>
-
-          {/* 2つ目のカード */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-2">職歴</h3>
-            <p className="text-gray-600">hogehoge株式会社（XXXX年 - 現在）</p>
-            <p className="text-gray-600">役職: Webエンジニア</p>
-            <p className="text-gray-600">主な業務: Webアプリケーションの開発</p>
+          <div className="lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0">
+            <div className="w-48 h-48 lg:w-96 lg:h-96 overflow-hidden rounded-full">
+              <img
+                src="/assets/profile.jpg"
+                alt="Your Name"
+                className="object-cover w-full h-full"
+              />
+            </div>
           </div>
-
-          {/* 3つ目のカード */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-2">スキルセット</h3>
-            <ul className="list-disc pl-6">
-              <li className="text-gray-600">JavaScript / TypeScript</li>
-              <li className="text-gray-600">React / Next.js</li>
-              <li className="text-gray-600">Flutter</li>
-              <li className="text-gray-600">AWS</li>
-            </ul>
+        </section>
+      </Container>
+      <Container>
+        <section className="py-8">
+          <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Career</h2>
+          <ul className="space-y-4">
+            <li className="text-lg">
+              <span className="font-semibold">[Year Range]</span> - [Position]
+              at [Company]
+            </li>
+            <li className="text-lg">
+              <span className="font-semibold">[Year Range]</span> - [Position]
+              at [Company]
+            </li>
+            <li className="text-lg">
+              <span className="font-semibold">[Year Range]</span> - [Position]
+              at [Company]
+            </li>
+          </ul>
+        </section>
+      </Container>
+      <Container bgColor="bg-gray-100">
+        {/* <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Achievements</h2>
+          <ul className="space-y-4">
+            <li className="text-lg">
+              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
+            </li>
+            <li className="text-lg">
+              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
+            </li>
+            <li className="text-lg">
+              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
+            </li>
+          </ul> */}
+        <section className="py-8">
+          <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Achievements</h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <img
+                src="/path/to/achievement-thumbnail1.jpg"
+                alt="Achievement 1"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="mt-4">
+                <h3 className="mb-2 text-xl font-semibold">
+                  Achievement Title 1
+                </h3>
+                <p className="text-gray-600">
+                  A brief description of the achievement, highlighting the key
+                  points and significance.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <img
+                src="/path/to/achievement-thumbnail2.jpg"
+                alt="Achievement 2"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="mt-4">
+                <h3 className="mb-2 text-xl font-semibold">
+                  Achievement Title 2
+                </h3>
+                <p className="text-gray-600">
+                  A brief description of the achievement, highlighting the key
+                  points and significance.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 bg-white rounded-lg shadow-md">
+              <img
+                src="/path/to/achievement-thumbnail3.jpg"
+                alt="Achievement 3"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="mt-4">
+                <h3 className="mb-2 text-xl font-semibold">
+                  Achievement Title 3
+                </h3>
+                <p className="text-gray-600">
+                  A brief description of the achievement, highlighting the key
+                  points and significance.
+                </p>
+              </div>
+            </div>
+            {/* Add more cards as needed */}
           </div>
-
-          {/* 4つ目のカード */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-2">資格</h3>
-            <p className="text-gray-600">AWS認定ソリューションアーキテクト – アソシエイト（XXXX年）</p>
-            <p className="text-gray-600">TOEIC 800点（XXXX年）</p>
-            <p className="text-gray-600">基本情報技術者（XXXX年）</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  )
+        </section>
+      </Container>
+    </main>
+  );
 }
