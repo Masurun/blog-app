@@ -13,9 +13,12 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm", {
-        "hover:shadow-lg transition-shadow duration-200": slug,
-      })}
+      className={cn(
+        "shadow-sm transition-transform duration-100 ease-in-out transform", // 基本のトランジションと変形効果
+        {
+          "hover:scale-105 hover:shadow-xl hover:saturate-150": slug, // ホバー時の効果
+        }
+      )}
       width={710}
       height={420}
     />
