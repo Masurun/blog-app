@@ -12,11 +12,10 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    `${ASSETS_PATH}/assets/hero2.jpg`,
+    `${ASSETS_PATH}hero2.jpg`,
     `/assets/hero3.jpg`,
     `/assets/hero.jpg`,
   ];
-console.log(images);
   // リンクのパスを配列で管理
   const links = [
     `/link1`,  // 1つ目の画像に対応するリンク先
