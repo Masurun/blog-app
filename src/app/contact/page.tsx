@@ -1,4 +1,3 @@
-// pages/contact.js
 import Container from "@/app/_components/container";
 
 export default function Contact() {
@@ -13,7 +12,7 @@ export default function Contact() {
             <iframe
               src="https://forms.gle/ByrgJQb6XnuqHg3c6"
               width="100%"
-              height="600px"
+              height="900px"
               className="border-2 border-gray-300 rounded-lg"
               allowFullScreen
             ></iframe>
