@@ -3,7 +3,8 @@ import { getAllPosts } from "@/lib/api";
 import Container from "@/app/_components/container";
 import { Post } from "@/interfaces/post";
 import { PostPreview } from "@/app/_components/post-preview";
-import Pagination from "@/app/_components/pagination"; // ページネーションコンポーネントをインポート
+import Pagination from "@/app/_components/pagination";
+import AnimatedContainers from "@/app/_components/animated-containers";
 
 
 const POSTS_PER_PAGE = 9; // 1ページあたりの投稿数を設定
@@ -29,6 +30,7 @@ export default async function Page({ params }: { params: { page: string } }) {
   return (
     <main className="py-16">
       <Container>
+      <AnimatedContainers>
         <section>
           <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
             Life
@@ -48,6 +50,7 @@ export default async function Page({ params }: { params: { page: string } }) {
           </div>
           <Pagination currentPage={page} totalPages={Math.ceil(allPosts.length / POSTS_PER_PAGE)} category={category} />
         </section>
+        </AnimatedContainers>
       </Container>
     </main>
   );

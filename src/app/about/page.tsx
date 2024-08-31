@@ -1,9 +1,11 @@
 import Container from "@/app/_components/container";
+import AnimatedContainers from "@/app/_components/animated-containers";
 
 export default function About() {
   return (
     <main>
       <Container bgColor="bg-gray-100">
+      <AnimatedContainers>
         <section className="flex flex-col-reverse lg:flex-row items-center lg:items-start py-8">
           <div className="lg:w-1/2">
             <h2 className="mb-4 text-4xl font-bold lg:text-5xl">Profile</h2>
@@ -28,8 +30,10 @@ export default function About() {
             </div>
           </div>
         </section>
+        </AnimatedContainers>
       </Container>
       <Container>
+      <AnimatedContainers>
         <section className="py-8">
           <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Career</h2>
           <ul className="space-y-4">
@@ -47,8 +51,10 @@ export default function About() {
             </li>
           </ul>
         </section>
+       </AnimatedContainers>
       </Container>
       <Container bgColor="bg-gray-100">
+      <AnimatedContainers>
         <section className="py-8">
           <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Works</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -103,6 +109,7 @@ export default function About() {
             {/* Add more cards as needed */}
           </div>
         </section>
+        </AnimatedContainers>
       </Container>
     </main>
   );
