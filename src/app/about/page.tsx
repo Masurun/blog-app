@@ -1,5 +1,6 @@
 import Container from "@/app/_components/container";
 import AnimatedContainers from "@/app/_components/animated-containers";
+import { ASSETS_PATH } from "@/lib/constants";
 
 export default function About() {
   return (
@@ -23,7 +24,7 @@ export default function About() {
           <div className="lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0">
             <div className="w-48 h-48 lg:w-96 lg:h-96 overflow-hidden rounded-full">
               <img
-                src="/assets/profile.jpg"
+                src={`${ASSETS_PATH}profile.jpg`}
                 alt="Your Name"
                 className="object-cover w-full h-full"
               />
