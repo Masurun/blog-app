@@ -49,20 +49,8 @@ export default function About() {
         </section>
       </Container>
       <Container bgColor="bg-gray-100">
-        {/* <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Achievements</h2>
-          <ul className="space-y-4">
-            <li className="text-lg">
-              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
-            </li>
-            <li className="text-lg">
-              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
-            </li>
-            <li className="text-lg">
-              <span className="font-semibold">[Achievement Title]</span> - [Description of Achievement]
-            </li>
-          </ul> */}
         <section className="py-8">
-          <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Achievements</h2>
+          <h2 className="mb-8 text-3xl font-bold lg:text-4xl">Works</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="p-4 bg-white rounded-lg shadow-md">
               <img
