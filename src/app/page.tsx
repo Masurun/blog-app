@@ -12,12 +12,21 @@ export default function Index() {
         {allPosts.length > 0 && (
           <MoreStories
             posts={allPosts}
-            title="Diary"
+            title="Works"
+            link="/blog-app/blog/works/1"
+          />
+        )}
+        </Container>
+      <Container>
+        {allPosts.length > 0 && (
+          <MoreStories
+            posts={allPosts}
+            title="Life"
             link="/blog-app/blog/life/1"
           />
         )}
         </Container>
-        <Container>
+        <Container bgColor="bg-gray-100">
         {allPosts.length > 0 && (
           <MoreStories
             posts={allPosts}
