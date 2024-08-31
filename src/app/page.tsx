@@ -13,7 +13,7 @@ export default function Index() {
           <MoreStories
             posts={allPosts}
             title="Diary"
-            link="/blog-app/blog/diary/1"
+            link="/blog-app/blog/life/1"
           />
         )}
         </Container>

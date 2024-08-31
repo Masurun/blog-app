@@ -25,13 +25,13 @@ export default async function Page({ params }: { params: { page: string } }) {
   const allPosts: Post[] = await getAllPosts();
   const startIndex = (page - 1) * POSTS_PER_PAGE;
   const selectedPosts = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
-  const category = "diary";
+  const category = "life";
   return (
     <main className="py-16">
       <Container>
         <section>
           <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
-            Diary
+            Life
           </h2>
 
           {/* 投稿の一覧表示 */}
