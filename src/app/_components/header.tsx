@@ -13,9 +13,10 @@ export function Header() {
     <header className="shadow">
       <div className="flex items-center justify-between p-4 bg-white container mx-auto px-5">
         <h1 className="text-2xl font-bold tracking-tighter">
-          <Link href="/">Ran's Diary</Link>
+          <Link href="/">Ran's Blog</Link>
         </h1>
         <nav className="hidden md:flex space-x-4">
+          <Link href="/blog/works/1">Works</Link>
           <Link href="/blog/life/1">Life</Link>
           <Link href="/blog/tech/1">Tech</Link>
           <Link href="/about">About</Link>
@@ -73,6 +74,7 @@ export function Header() {
               </svg>
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
+              <Link href="/blog/works/1">Works</Link>
               <Link href="/blog/life/1">Life</Link>
               <Link href="/blog/tech/1">Tech</Link>
               <Link href="/about">About</Link>
