@@ -14,7 +14,6 @@ export default function Contact() {
               src="https://forms.gle/ByrgJQb6XnuqHg3c6"
               width="100%"
               height="600px"
-              frameBorder="0"
               className="border-2 border-gray-300 rounded-lg"
               allowFullScreen
             ></iframe>
