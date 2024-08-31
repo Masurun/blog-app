@@ -14,7 +14,7 @@ export function MoreStories({ posts, title, link}: Props) {
       <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
         {title}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 mb-16">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

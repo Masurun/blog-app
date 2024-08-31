@@ -22,7 +22,7 @@ export function getLatestPosts(): Post[] {
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-    .slice(0, 4); // 最初の6件を取得
+    .slice(0, 2); // 最初の6件を取得
 
   return posts;
 }
