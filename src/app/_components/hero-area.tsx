@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
-import nextConfig from "../../../next.config.mjs";
+import nextConfig from "../../../next.config.js";
 
 const BASE_PATH = nextConfig.basePath || "";
 
