@@ -1,11 +1,9 @@
 // src/app/_components/hero.tsx
 "use client";
-
 import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function HeroArea() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
