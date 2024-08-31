@@ -18,7 +18,7 @@ export default function HeroArea() {
     `/assets/hero3.jpg`,
     `/assets/hero.jpg`,
   ];
-
+console.log(images);
   // リンクのパスを配列で管理
   const links = [
     `/link1`,  // 1つ目の画像に対応するリンク先
