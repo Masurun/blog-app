@@ -4,8 +4,8 @@
 import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import nextConfig from "../../../next.config.js";
-const BASE_PATH = nextConfig.basePath || "";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroArea() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -13,9 +13,16 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    `{${BASE_PATH}/assets/hero2.jpg}`,
-    `{${BASE_PATH}/assets/hero3.jpg}`,
-    `{${BASE_PATH}/assets/hero.jpg}`
+    `/assets/hero2.jpg`,
+    `/assets/hero3.jpg`,
+    `/assets/hero.jpg`,
+  ];
+
+  // リンクのパスを配列で管理
+  const links = [
+    `/link1`,  // 1つ目の画像に対応するリンク先
+    `/link2`,  // 2つ目の画像に対応するリンク先
+    `/link3`,  // 3つ目の画像に対応するリンク先
   ];
 
   // スライドのインデックスを更新するためのエフェクト
@@ -42,14 +49,16 @@ export default function HeroArea() {
   return (
     <section className="relative">
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container max-h-[320px]">
+        <div className="embla__container max-h-[420px]">
           {images.map((src, index) => (
             <div key={index} className="embla__slide">
+              <Link href={links[index]} target="_blank" rel="noopener noreferrer">
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
               />
+              </Link>
             </div>
           ))}
         </div>
