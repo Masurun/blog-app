@@ -6,7 +6,9 @@ import SplashScreen from "@/app/_components/splash-screen";
 import AnimatedContainers from "@/app/_components/animated-containers";
 
 export default function Index() {
-  const allPosts = getLatestPosts();
+  const latestWorksPosts = getLatestPosts("works");
+  const latestLifePosts = getLatestPosts("life");
+  const latestTechPosts = getLatestPosts("tech");
 
   return (
     <main>
@@ -14,9 +16,9 @@ export default function Index() {
       <HeroArea />
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {allPosts.length > 0 && (
+          {latestWorksPosts.length > 0 && (
             <MoreStories
-              posts={allPosts}
+              posts={latestWorksPosts}
               title="Works"
               link="/blog-app/blog/works/1"
             />
@@ -25,9 +27,9 @@ export default function Index() {
       </Container>
       <Container>
         <AnimatedContainers>
-          {allPosts.length > 0 && (
+          {latestLifePosts.length > 0 && (
             <MoreStories
-              posts={allPosts}
+              posts={latestLifePosts}
               title="Life"
               link="/blog-app/blog/life/1"
             />
@@ -36,9 +38,9 @@ export default function Index() {
       </Container>
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {allPosts.length > 0 && (
+          {latestTechPosts.length > 0 && (
             <MoreStories
-              posts={allPosts}
+              posts={latestTechPosts}
               title="Tech"
               link="/blog-app/blog/tech/1"
             />

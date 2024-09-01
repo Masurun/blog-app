@@ -7,9 +7,10 @@ import AnimatedContainers from "@/app/_components/animated-containers";
 
 
 const POSTS_PER_PAGE = 9; // 1ページあたりの投稿数を設定
+const DIR = "works";
 
 export async function generateStaticParams() {
-  const allPosts: Post[] = await getAllPosts();
+  const allPosts: Post[] = await getAllPosts(DIR);
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
   const paths = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -21,7 +22,7 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: { params: { page: string } }) {
   const page = parseInt(params.page, 10) || 1;
-  const allPosts: Post[] = await getAllPosts();
+  const allPosts: Post[] = await getAllPosts(DIR);
   const startIndex = (page - 1) * POSTS_PER_PAGE;
   const selectedPosts = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
   const category = "works";
@@ -43,7 +44,7 @@ export default async function Page({ params }: { params: { page: string } }) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                slug={post.slug}
+                slug={DIR + "/" + post.slug}
               />
             ))}
           </div>

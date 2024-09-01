@@ -8,8 +8,7 @@ import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 
 export default async function Post({ params }: Params) {
-  const post = getPostBySlug(params.slug);
-
+  const post = getPostBySlug(params.slug ,params.category);
   if (!post) {
     return notFound();
   }
@@ -34,13 +33,13 @@ export default async function Post({ params }: Params) {
 
 type Params = {
   params: {
+    category: string;
     slug: string;
   };
 };
 
 export function generateMetadata({ params }: Params): Metadata {
-  const post = getPostBySlug(params.slug);
-
+  const post = getPostBySlug(params.slug, params.category);
   if (!post) {
     return notFound();
   }
@@ -57,9 +56,38 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const categories = ['life', 'works', 'tech']; // カテゴリーのリスト（実際には動的に取得するかもしれません）
+  // 各カテゴリーの投稿を取得してパスを生成
+  const paths = await Promise.all(
+    categories.map(async (category) => {
+      const posts = getAllPosts(category);
+      return posts.map((post) => ({
+        category,
+        slug: post.slug,
+      }));
+    })
+  );
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  // すべてのカテゴリーのパスをフラットな配列にする
+  return paths.flat();
 }
+
+// export async function generateStaticParams() {
+//   const categories = ["life", "works", "tech"];
+//   const paths: { category: string; slug: string }[] = [];
+
+//   for (const category of categories) {
+//     const posts = getAllPosts(category);
+//     if (Array.isArray(posts)) {
+//       posts.forEach((post) => {
+//         paths.push({
+//           category,
+//           slug: post.slug,
+//         });
+//       });
+//     }
+//   }
+
+//   console.log();
+//   // return paths;
+// }
