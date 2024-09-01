@@ -65,7 +65,7 @@ export default function About() {
               <PostPreview
                 key={""}
                 title={"関連図作成アプリ"}
-                coverImage={"kanrenzu.png"}
+                coverImage={`${ASSETS_PATH}kanrenzu.png`}
                 date={"2024-08-31T00:00:00.000Z"}
                 slug={""}
               />
