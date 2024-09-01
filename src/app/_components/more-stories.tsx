@@ -6,9 +6,10 @@ type Props = {
   posts: Post[];
   title: string;
   link: string;
+  category: string;
 };
 
-export function MoreStories({ posts, title, link}: Props) {
+export function MoreStories({ posts, title, link, category}: Props) {
   return (
     <section className="py-8">
       <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
@@ -21,7 +22,7 @@ export function MoreStories({ posts, title, link}: Props) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            slug={post.slug}
+            slug={category + "/" + post.slug}
           />
         ))}
       </div>

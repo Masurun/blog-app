@@ -21,6 +21,7 @@ export default function Index() {
               posts={latestWorksPosts}
               title="Works"
               link="/blog-app/blog/works/1"
+              category="works"
             />
           )}
         </AnimatedContainers>
@@ -32,6 +33,7 @@ export default function Index() {
               posts={latestLifePosts}
               title="Life"
               link="/blog-app/blog/life/1"
+              category="life"
             />
           )}
         </AnimatedContainers>
@@ -43,6 +45,7 @@ export default function Index() {
               posts={latestTechPosts}
               title="Tech"
               link="/blog-app/blog/tech/1"
+              category="tech"
             />
           )}
         </AnimatedContainers>
