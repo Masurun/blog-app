@@ -1,14 +1,33 @@
 ---
-title: "Life_posts/life/preview_2.md"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+title: "2回目の箱根旅"
+excerpt: ""
 coverImage: "/blog-app/assets/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2024-09-02T00:00:00.000Z"
 ogImage:
   url: "/blog-app/assets/cover.jpg"
 ---
 
-### Lorem Ipsum
+### 楽しめないかと思いきや？
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+先日、人生2回目の箱根に行きました。楽しめるのかな？と心配でしたが、結構楽しめました。
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![](/blog-app/assets/cover.jpg)
+
+箱根といえば大涌谷が有名な観光スポットです。自然の雄大さを感じることができます。
+いつ来てもおぉすごいとなります。
+
+
+大涌谷の人気のグルメとしては黒たまごがありますね。
+2個入りの黒たまごを探してみましたが、どこもどのお店も4個入りしか販売しておらず、仕方なく4個入りを購入しました。
+１つ食べると７年延命というキャッチコピーが印象的でした。
+
+![](/blog-app/assets/cover.jpg)
+
+前回の箱根旅行では行かなかったポーラ美術館に行きました。
+プカプカ浮かぶ魚を見て童心に帰ることができました。
+
+![](/blog-app/assets/cover.jpg)
+
+有名な画家の作品もいくつか楽しむことができました。
+
+![](/blog-app/assets/cover.jpg)
