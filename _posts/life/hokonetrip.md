@@ -1,10 +1,10 @@
 ---
 title: "2回目の箱根旅"
 excerpt: ""
-coverImage: "/blog-app/assets/cover.jpg"
+coverImage: "/blog-app/assets/IMG_2452.HEIC"
 date: "2024-09-02T00:00:00.000Z"
 ogImage:
-  url: "/blog-app/assets/cover.jpg"
+  url: "/blog-app/assets/IMG_2452.HEIC"
 ---
 
 ### 楽しめないかと思いきや？
