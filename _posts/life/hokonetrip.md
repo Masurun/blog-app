@@ -24,7 +24,7 @@ ogImage:
 箱根といえば大涌谷が有名な観光スポットです。自然の雄大さを感じることができます。
 ![](/blog-app/assets/life/hakonetrip/4.jpg)
 
-###　ポーラ美術館
+### ポーラ美術館
 前回の箱根旅行では行かなかったポーラ美術館に行きました。
 プカプカ浮かぶ魚を見て童心に帰ることができました。
 ![](/blog-app/assets/life/hakonetrip/1.jpg)
