@@ -12,9 +12,9 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    `${ASSETS_PATH}hero2.jpg`,
-    `${ASSETS_PATH}hero3.jpg`,
-    `${ASSETS_PATH}hero.jpg`,
+    `${ASSETS_PATH}/hero/hero2.jpg`,
+    `${ASSETS_PATH}/hero/hero3.jpg`,
+    `${ASSETS_PATH}/hero/hero.jpg`,
   ];
   // リンクのパスを配列で管理
   const links = [
