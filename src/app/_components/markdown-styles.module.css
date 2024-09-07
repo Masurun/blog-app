@@ -15,5 +15,5 @@
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4;
+  @apply text-2xl mt-8 mb-4 border-b-2 border-black;
 }
