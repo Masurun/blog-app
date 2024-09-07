@@ -71,23 +71,3 @@ export async function generateStaticParams() {
   // すべてのカテゴリーのパスをフラットな配列にする
   return paths.flat();
 }
-
-// export async function generateStaticParams() {
-//   const categories = ["life", "works", "tech"];
-//   const paths: { category: string; slug: string }[] = [];
-
-//   for (const category of categories) {
-//     const posts = getAllPosts(category);
-//     if (Array.isArray(posts)) {
-//       posts.forEach((post) => {
-//         paths.push({
-//           category,
-//           slug: post.slug,
-//         });
-//       });
-//     }
-//   }
-
-//   console.log();
-//   // return paths;
-// }
