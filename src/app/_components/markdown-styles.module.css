@@ -5,6 +5,7 @@
 .markdown p,
 .markdown ul,
 .markdown ol,
+.markdown img
 .markdown blockquote {
   @apply my-6;
 }
