@@ -17,7 +17,7 @@ export function PostPreview({
 }: Props) {
   return (
     <div className="mb-2.5">
-      <div className="mb-2.5">
+      <div className="mb-2.5 relative w-full" style={{ paddingBottom: '59.15%' }}>
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <h3 className="text-s font-bold">

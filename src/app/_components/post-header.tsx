@@ -15,7 +15,9 @@ export function PostHeader({ title, coverImage, date }: Props) {
         <DateFormatter dateString={date} />
       </div>
       <PostTitle>{title}</PostTitle>
-        <CoverImage title={title} src={coverImage} />
+        <div className="relative w-full" style={{ paddingBottom: '59.15%' }}>
+          <CoverImage title={title} src={coverImage} />
+        </div>
     </div>
   );
 }
