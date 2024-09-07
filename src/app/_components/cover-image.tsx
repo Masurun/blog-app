@@ -20,7 +20,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
         }
       )}
       layout="fill"
-      objectFit="cover"
+      objectFit="contain"
     />
   );
   return (
