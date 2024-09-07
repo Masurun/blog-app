@@ -12,7 +12,7 @@ export default function Index() {
 
   return (
     <main>
-      <SplashScreen />
+      {/* <SplashScreen /> */}
       <HeroArea />
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
