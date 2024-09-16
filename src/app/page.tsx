@@ -6,9 +6,9 @@ import SplashScreen from "@/app/_components/splash-screen";
 import AnimatedContainers from "@/app/_components/animated-containers";
 
 export default function Index() {
-  const latestWorksPosts = getLatestPosts("works");
-  const latestLifePosts = getLatestPosts("life");
-  const latestTechPosts = getLatestPosts("tech");
+  const latestToeicPosts = getLatestPosts("toeic");
+  const latestEikenPosts = getLatestPosts("eiken");
+  const latestReviewPosts = getLatestPosts("review");
 
   return (
     <main>
@@ -16,36 +16,36 @@ export default function Index() {
       <HeroArea />
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {latestWorksPosts.length > 0 && (
+          {latestToeicPosts.length > 0 && (
             <MoreStories
-              posts={latestWorksPosts}
-              title="Works"
-              link="/blog-app/blog/works/1"
-              category="works"
+              posts={latestToeicPosts}
+              title="TOEIC"
+              link="/blog-app/blog/toeic/1"
+              category="toeic"
             />
           )}
         </AnimatedContainers>
       </Container>
       <Container>
         <AnimatedContainers>
-          {latestLifePosts.length > 0 && (
+          {latestEikenPosts.length > 0 && (
             <MoreStories
-              posts={latestLifePosts}
-              title="Life"
-              link="/blog-app/blog/life/1"
-              category="life"
+              posts={latestEikenPosts}
+              title="英検"
+              link="/blog-app/blog/eiken/1"
+              category="eiken"
             />
           )}
         </AnimatedContainers>
       </Container>
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {latestTechPosts.length > 0 && (
+          {latestReviewPosts.length > 0 && (
             <MoreStories
-              posts={latestTechPosts}
-              title="Tech"
-              link="/blog-app/blog/tech/1"
-              category="tech"
+              posts={latestReviewPosts}
+              title="Review"
+              link="/blog-app/blog/review/1"
+              category="review"
             />
           )}
         </AnimatedContainers>
