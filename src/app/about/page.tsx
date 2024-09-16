@@ -1,11 +1,7 @@
 import Container from "@/app/_components/container";
 import AnimatedContainers from "@/app/_components/animated-containers";
 import { ASSETS_PATH } from "@/lib/constants";
-import { PostPreview } from "@/app/_components/post-preview";
-import { getLatestPosts } from "@/lib/api";
-import { MoreStories } from "@/app/_components/more-stories";
 
-const latestWorksPosts = getLatestPosts("works");
 export default function About() {
   return (
     <main>
@@ -63,18 +59,6 @@ export default function About() {
               </li>
             </ul>
           </section>
-        </AnimatedContainers>
-      </Container>
-      <Container bgColor="bg-gray-100">
-        <AnimatedContainers>
-          {latestWorksPosts.length > 0 && (
-            <MoreStories
-              posts={latestWorksPosts}
-              title="Works"
-              link="/blog-app/blog/works/1"
-              category="works"
-            />
-          )}
         </AnimatedContainers>
       </Container>
     </main>
