@@ -47,7 +47,7 @@ export default function HeroArea() {
   return (
     <section className="relative">
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container max-h-[420px] overflow-hidden">
+        <div className="embla__container max-h-[420px]">
           {images.map((src, index) => (
             <div key={index} className="embla__slide">
               <Link href={links[index]} target="_blank" rel="noopener noreferrer">
