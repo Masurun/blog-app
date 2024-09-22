@@ -54,7 +54,7 @@ export default function HeroArea() {
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-auto max-h-[420px] object-contain object-center"
+                className="w-full h-full object-contain bg-gray-200"
               />
               </Link>
             </div>
