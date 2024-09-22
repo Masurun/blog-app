@@ -17,8 +17,8 @@ export function Header() {
         </h1>
         <nav className="hidden md:flex space-x-4">
           <Link href="/blog/diary/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">日記</Link>
-          <Link href="/blog/toeic/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">TOEIC</Link>
           <Link href="/blog/eiken/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">英検</Link>
+          <Link href="/blog/toeic/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">TOEIC</Link>
           <Link href="/about" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">About</Link>
           <Link href="/contact" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</Link>
         </nav>
@@ -75,8 +75,8 @@ export function Header() {
             </button>
             <div className="flex flex-col items-center justify-center h-full space-y-6">
               <Link href="/blog/diary/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">日記</Link>
-              <Link href="/blog/toeic/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">TOEIC</Link>
               <Link href="/blog/eiken/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">英検</Link>
+              <Link href="/blog/toeic/1" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">TOEIC</Link>
               <Link href="/about" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">About</Link>
               <Link href="/contact" className="relative pb-1 after:block after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</Link>
             </div>

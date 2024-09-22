@@ -16,12 +16,12 @@ export default function Index() {
       <HeroArea />
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {latestToeicPosts.length > 0 && (
+          {latestDiaryPosts.length > 0 && (
             <MoreStories
-              posts={latestToeicPosts}
-              title="TOEIC"
-              link="/blog-app/blog/toeic/1"
-              category="toeic"
+              posts={latestDiaryPosts}
+              title="日記"
+              link="/blog-app/blog/diary/1"
+              category="diary"
             />
           )}
         </AnimatedContainers>
@@ -40,12 +40,12 @@ export default function Index() {
       </Container>
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {latestDiaryPosts.length > 0 && (
+          {latestToeicPosts.length > 0 && (
             <MoreStories
-              posts={latestDiaryPosts}
-              title="日記"
-              link="/blog-app/blog/diary/1"
-              category="diary"
+              posts={latestToeicPosts}
+              title="TOEIC"
+              link="/blog-app/blog/toeic/1"
+              category="toeic"
             />
           )}
         </AnimatedContainers>
