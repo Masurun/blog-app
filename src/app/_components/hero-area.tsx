@@ -12,14 +12,14 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
-    `${ASSETS_PATH}/hero/hero.png`,
     `${ASSETS_PATH}/hero/hero2.jpg`,
+    `${ASSETS_PATH}/hero/hero.png`,
     `${ASSETS_PATH}/hero/hero3.png`,
   ];
   // リンクのパスを配列で管理
   const links = [
-    `/posts/toeic/20240318`,  // 1つ目の画像に対応するリンク先
     `/posts/diary/20240916`,  // 2つ目の画像に対応するリンク先
+    `/posts/toeic/20240318`,  // 1つ目の画像に対応するリンク先
     `/posts/eiken/20240918`,  // 3つ目の画像に対応するリンク先
   ];
 
