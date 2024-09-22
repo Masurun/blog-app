@@ -18,9 +18,9 @@ export default function HeroArea() {
   ];
   // リンクのパスを配列で管理
   const links = [
-    `/blog-app/posts/toeic/20240318`,  // 1つ目の画像に対応するリンク先
-    `/blog-app/posts/diary/20240916`,  // 2つ目の画像に対応するリンク先
-    `/blog-app/posts/eiken/20240918`,  // 3つ目の画像に対応するリンク先
+    `/posts/toeic/20240318`,  // 1つ目の画像に対応するリンク先
+    `/posts/diary/20240916`,  // 2つ目の画像に対応するリンク先
+    `/posts/eiken/20240918`,  // 3つ目の画像に対応するリンク先
   ];
 
   // スライドのインデックスを更新するためのエフェクト
