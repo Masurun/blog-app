@@ -56,7 +56,7 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 export async function generateStaticParams() {
-  const categories = ['toeic', 'eiken', 'review'];
+  const categories = ['toeic', 'eiken', 'diary'];
   // 各カテゴリーの投稿を取得してパスを生成
   const paths = await Promise.all(
     categories.map(async (category) => {

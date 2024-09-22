@@ -7,7 +7,7 @@ import AnimatedContainers from "@/app/_components/animated-containers";
 
 
 const POSTS_PER_PAGE = 9; // 1ページあたりの投稿数を設定
-const DIR = "review";
+const DIR = "diary";
 
 export async function generateStaticParams() {
   const allPosts: Post[] = await getAllPosts(DIR);
@@ -25,7 +25,7 @@ export default async function Page({ params }: { params: { page: string } }) {
   const allPosts: Post[] = await getAllPosts(DIR);
   const startIndex = (page - 1) * POSTS_PER_PAGE;
   const selectedPosts = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
-  const category = "review";
+  const category = "diary";
 
   return (
     <main className="py-16">
@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: { page: string } }) {
       <AnimatedContainers>
         <section>
           <h2 className="mb-16 font-bold text-center text-4xl lg:text-5xl">
-            Review
+            日記
           </h2>
 
           {/* 投稿の一覧表示 */}

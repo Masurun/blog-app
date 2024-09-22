@@ -8,7 +8,7 @@ import AnimatedContainers from "@/app/_components/animated-containers";
 export default function Index() {
   const latestToeicPosts = getLatestPosts("toeic");
   const latestEikenPosts = getLatestPosts("eiken");
-  const latestReviewPosts = getLatestPosts("review");
+  const latestDiaryPosts = getLatestPosts("diary");
 
   return (
     <main>
@@ -40,12 +40,12 @@ export default function Index() {
       </Container>
       <Container bgColor="bg-gray-100">
         <AnimatedContainers>
-          {latestReviewPosts.length > 0 && (
+          {latestDiaryPosts.length > 0 && (
             <MoreStories
-              posts={latestReviewPosts}
-              title="Review"
-              link="/blog-app/blog/review/1"
-              category="review"
+              posts={latestDiaryPosts}
+              title="日記"
+              link="/blog-app/blog/diary/1"
+              category="diary"
             />
           )}
         </AnimatedContainers>
