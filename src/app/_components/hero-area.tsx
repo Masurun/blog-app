@@ -12,15 +12,15 @@ export default function HeroArea() {
 
   // 画像のパスを配列で管理
   const images = [
+    `${ASSETS_PATH}/hero/hero.png`,
     `${ASSETS_PATH}/hero/hero2.jpg`,
-    `${ASSETS_PATH}/hero/hero3.jpg`,
-    `${ASSETS_PATH}/hero/hero.jpg`,
+    `${ASSETS_PATH}/hero/hero3.png`,
   ];
   // リンクのパスを配列で管理
   const links = [
-    `/link1`,  // 1つ目の画像に対応するリンク先
-    `/link2`,  // 2つ目の画像に対応するリンク先
-    `/link3`,  // 3つ目の画像に対応するリンク先
+    `/blog-app/posts/toeic/20240318`,  // 1つ目の画像に対応するリンク先
+    `/blog-app/posts/diary/20240916`,  // 2つ目の画像に対応するリンク先
+    `/blog-app/posts/eiken/20240918`,  // 3つ目の画像に対応するリンク先
   ];
 
   // スライドのインデックスを更新するためのエフェクト
