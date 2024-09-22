@@ -17,11 +17,13 @@ export default function About() {
                 主にPHP、JavaScript、Flutterでの開発に従事しています。
               </p>
               <p className="mb-4 text-lg leading-relaxed">
-                インフラ周りの知見が足りていないことを痛感し、今年中にAWS
-                SAPとLPIC1の取得に向けて勉強中。
+                AWS SAP、英検準一級の取得に向けて勉強中です。
               </p>
               <p className="mb-4 text-lg leading-relaxed">
-                保有資格: TOEIC800点 / 基本情報技術者 / AWS SAA / 簿記3級
+                趣味はサウナです。ホームサウナは湘南RESORT SPA 竜泉寺の湯 湘南茅ヶ崎店です。
+              </p>
+              <p className="mb-4 text-lg leading-relaxed">
+                保有資格: TOEIC815点 / 基本情報技術者 / AWS SAA / 簿記3級
               </p>
             </div>
             <div className="lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0">
@@ -46,8 +48,12 @@ export default function About() {
                 獨協大学法学部法律学科を卒業
               </li>
               <li className="text-lg">
+                <span className="font-semibold">2020年4月</span> -
+                新卒で小売業の会社に入社
+              </li>
+              <li className="text-lg">
                 <span className="font-semibold">2020年10月</span> -
-                新卒で小売業の会社に入社したが、半年で退職
+                小売業の会社を退社
               </li>
               <li className="text-lg">
                 <span className="font-semibold">2020年11月</span> -
@@ -55,7 +61,7 @@ export default function About() {
               </li>
               <li className="text-lg">
                 <span className="font-semibold">2021年5月</span> -
-                渋谷のWeb制作会社に奇跡的に入社し今に至る
+                Web制作会社に入社
               </li>
             </ul>
           </section>
